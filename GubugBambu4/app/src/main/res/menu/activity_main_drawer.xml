@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Beranda" />
+        <!--<item
+            android:id="@+id/nav_cari"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Cari Kost" />-->
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_my_location_black_24dp"
+            android:title="Peta Lokasi" />
+        <item
+            android:id="@+id/nav_kost"
+            android:icon="@drawable/ic_account"
+            android:title="Kost" />
+
+     </group>
+
+    <item android:title="">
+        <menu>
+            <!--<item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                android:title="Log In" />-->
+            <item
+                android:id="@+id/nav_tambah"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Tambah Katalog Kost" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

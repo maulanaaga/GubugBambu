@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cardView2"
+    tools:context="idaulana.ac.unsyiah.gubugbambu4.ListSewaanSaya">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/background5"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+
+            android:id="@+id/imageView11"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:scaleType="centerInside"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/logo"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="17dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            app:srcCompat="@drawable/star" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_centerVertical="true"
+            android:text="@string/Toko"
+            android:layout_above="@+id/imageView7"
+            android:layout_toRightOf="@+id/imageView11"
+            android:layout_toEndOf="@+id/imageView11" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background2"
+        android:layout_below="@+id/relative1"
+        >
+
+        <ImageView
+            android:id="@+id/fotoRumah"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/halaman_posting"
+            android:scaleType="centerInside"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/nToko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_toko"
+            android:layout_below="@+id/fotoRumah"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deskripsiadapt"
+            android:text="Rp."/>
+
+        <TextView
+            android:id="@+id/alamatrum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jalan Kesemek"
+            android:layout_below="@+id/nToko"/>
+
+        <TextView
+            android:id="@+id/deskripsiadapt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deskripsi"
+            android:layout_below="@+id/alamatrum"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/sewa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deskripsiadapt"
+            android:layout_toRightOf="@+id/judul"
+            android:text="@string/harga_sewa" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deskripsiadapt"
+            android:layout_toRightOf="@+id/sewa"
+            android:text="/Tahun" />
+
+        <TextView
+            android:id="@+id/judul1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/judul"
+            android:text="No. Telepon : "/>
+
+        <TextView
+            android:id="@+id/textHp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telepon"
+            android:layout_below="@+id/sewa"
+            android:layout_toRightOf="@+id/judul1"/>
+
+        <TextView
+            android:id="@+id/textViewWaktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Waktu"
+            android:layout_below="@+id/textHp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_below="@+id/textViewWaktu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
